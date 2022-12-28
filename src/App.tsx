@@ -3,13 +3,14 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
-  const increaseCount =() => setCount(count+1);
-  const decreaseCount =() => {
-    if (count>0) {
-      setCount(count-1);
+  const increaseCount = () => setCount(count + 1);
+  const decreaseCount = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    } else {
+      alert("Only Positive Number Is alowed");
     }
-    else{alert("Only Positive Number Is alowed")}
-  }
+  };
   return (
     <div className="App">
       <h3>Count : {count}</h3>
